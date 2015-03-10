@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{6F2D97A6-F980-43CB-A833-DF78E94EAB9C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SPOJ</RootNamespace>
+    <AssemblyName>SPOJ</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LifetheUniverseandEverything.cs" />
+    <Compile Include="FactorialTrailingZeroes.cs" />
+    <Compile Include="INTEST.cs" />
+    <Compile Include="ADDREV.cs" />
+    <Compile Include="SAMER08F.cs" />
+    <Compile Include="ACPC10A.cs" />
+    <Compile Include="CANDY.cs" />
+    <Compile Include="GNY07A.cs" />
+    <Compile Include="ADUN.cs" />
+    <Compile Include="AE1B.cs" />
+    <Compile Include="AMR10F.cs" />
+    <Compile Include="MIRRORED.cs" />
+    <Compile Include="TSORT.cs" />
+    <Compile Include="ANARC08E.cs" />
+    <Compile Include="SCPC11D.cs" />
+    <Compile Include="DIVSUM.cs" />
+    <Compile Include="GNY07B.cs" />
+    <Compile Include="ATOMS.cs" />
+    <Compile Include="HELLOKIT.cs" />
+    <Compile Include="FASHION.cs" />
+    <Compile Include="ABSYS.cs" />
+    <Compile Include="COINS.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
